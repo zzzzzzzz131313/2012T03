@@ -19,10 +19,10 @@ public class FaultManagement {
 				"yyyy-MM-dd HH:mm:ss");
 		String date = dateFormat.format(now);
 		String filename = date + ".txt";
+		System.out.println(filepath);
 
 		try {
 			File parentDir = new File(filepath);
-			
 			if (!parentDir.exists()) {
 				System.out.println("[Parent directory doesn't exist!]");
 				parentDir.mkdirs();
